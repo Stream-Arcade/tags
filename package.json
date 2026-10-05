@@ -1,0 +1,33 @@
+{
+  "name": "@stream-arcade/tags",
+  "version": "1.0.0",
+  "description": "The StreamArcade head tags (analytics and co.) as a React component, with overridable tags and consent.",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/core.d.ts",
+      "default": "./dist/core.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "react": "^19.3.0",
+    "typescript": "~6.0.3"
+  }
+}
